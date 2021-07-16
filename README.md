@@ -6,7 +6,7 @@
 
 Este proyecto presenta la estructura de un blog, ¿qué te gustaría postear?
 
-Puedes verlo aquí: <link_para_ver>
+Puedes verlo aquí: [Nemium](https://epontoni.github.io/nemium/)
 
 ## 🔍 Vistas 
 
