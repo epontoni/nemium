@@ -65,8 +65,41 @@ h2 {
 
 h3 {
     font-size: 1.5em;
+    margin-bottom: 0;
 }
 
 p {
 
+}
+
+pre {
+    background: #FEC62E;
+}
+
+.hero {
+    height: 350px;
+    background: linear-gradient(to top, rgba(126, 88, 88, 0.5), transparent), url('../images/pattern.png');
+}
+
+.section-content {
+    counter-reset: titleList;
+}
+.section-content h3 {
+    counter-increment: titleList;
+}
+
+.section-content h3::before {
+    content: counter(titleList, decimal)". ";
+}
+
+.section-content h3::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: var(--gray30);
+    display: inline-block;
+    /*position: absolute;
+    bottom: -4px;
+    left: 0;
+    z-index: -1;*/
 }
