@@ -48,7 +48,7 @@ a {
 }
 .header {
     position: sticky;
-    top: 0;
+    top: -45px;
 }
 header {
     margin-top: 20px;
@@ -77,6 +77,11 @@ nav details summary {
     font-weight: bold;
     line-height: 24px;/**/
 }
+
+nav details summary:hover {
+    cursor: pointer;
+}
+
 
 nav .nav-title {
     text-transform: uppercase;
@@ -114,9 +119,10 @@ h3 {
     font-size: 1.5em;
     margin: 16px 0 24px 0;
     font-weight: normal;
-    position:sticky; /* de acá */
-    top: 0;
-    background: white;/*hasta acá*/
+    /* La siguiete feature estéticamente queda bien, pero da problemas con las anclas ¿Por qué? */
+    /*position:sticky;*/ /* de acá */
+    /*top: 0;*/
+    /*background: white;*/ /*hasta acá*/
 }
 
 p {
@@ -233,4 +239,89 @@ footer {
     background: red;
     border: 1px solid red !important;
     box-sizing: border-box;*/
+}
+
+#change-skin {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* SLIDER */
+
+.slider {
+}
+.slider-content {
+    /*block-size: 100px;*/
+    display: block;
+    overflow: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+/*.slider-slide h1 {
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+
+}*/
+
+.slider-bullet-list {
+    text-align: center;
+    margin-block-start: 10px;
+}
+
+.slider-bullet-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.video {
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.slider-bullet {
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    background: var(--gray30);
+    border-radius: 50%;
+    padding: 5px;
+    line-height: 15px;
+    margin-inline-end: 5px;
+}
+
+/* FORMULARIO */
+
+.form input {
+    inline-size: 100%;
+    border: 1px solid var(--gray30);
+    background: whitesmoke;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-inline: 16px;
+    padding-block: 12px;
+    color: var(--gray30);
+    font-size: 16px;
+    margin-block-end: 16px;
+    /*display: block;*/ /* para que hagan margin collapse*/
+}
+
+.form input::-webkit-input-placeholder {
+    color: var(--white20)
+}
+
+.form input[type="submit"] {
+    background: #157EFB;
+    color: var(--gray30);
+    border: none;
+}
+
+.form input[type="submit"]:hover {
+    cursor: pointer;
 }

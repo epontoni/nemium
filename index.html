@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles-physical.css">  
-    <!--<link rel="stylesheet" href="css/styles-logical.css">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="css/styles-physical.css">-->
+    <link id="skin" rel="stylesheet" href="css/styles-logical.css">
     <title>Nemium</title>
 </head>
 <body>
@@ -28,8 +30,8 @@
                                 <li><a href="#github">GitHub</a></li>
                             </ol>
                         </details>
-                        <details open>
-                            <summary>Conceptos esenciales del Desarrollo Web</summary>
+                        <details>
+                            <summary c>Conceptos esenciales del Desarrollo Web</summary>
                             <ol>
                                 <li><a href="#html">Qué es HTML</a></li>
                                 <li><a href="#tags">Etiquetas</a></li>
@@ -52,18 +54,18 @@
                 <hr>
                 <section class="section-content">
                     <h2>Setup</h2>
+                    <img src="images/google-chrome-bg-white.png" alt="Logo de Google Chrome" title="Logo de Google Chrome">
                     <h3 id="google-chrome">Google Chrome</h3>
                     <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.</p>
-                    <img src="images/google-chrome.png" alt="Logo de Google Chrome" title="Logo de Google Chrome">
+                    <img src="images/visual-studio-code-bg-white.png" alt="Logo de Visual Studio Code" title="Logo de Visual Studio Code">
                     <h3 id="vs-code">Visual Studio Code</h3>
                     <p>Visual Studio Code es el editor de texto más popular y potente del mercado actualmente, su fácil uso y la capacidad de extenderlo por medio de plugins lo hace el complemento perfecto para cualquier programador sin importar el lenguaje en el que se desemvuelva.</p>
-                    <img src="images/visual-studio-code.png" alt="Logo de Visual Studio Code" title="Logo de Visual Studio Code">
+                    <img src="images/figma-bg-white.png" alt="Logo de Figma" title="Logo de Figma">
                     <h3 id="figma">Figma</h3>
                     <p>Figma es una la herramienta más popular en la actualidad para entregar diseños a los desarrolladores para su implementación por su fácil uso porque puede ser usado directamente desde el navegador.</p>
-                    <img src="images/figma.png" alt="Logo de Figma" title="Logo de Figma">
+                    <img src="images/github-bg-white.png" alt="Logo de GitHub" title="Logo de GitHub">
                     <h3 id="github">GitHub</h3>
                     <p>Así como en Facebook te encuentran tus amigos, en Github te encuentran otras programadoras y programadores de todo el mundo, en vez de subir fotos de tus viajes aquí subes tu código y puedes elegir hacerlo “open source” o guardarlo de manera privada, Github será esencial para almacenar tu futuro portafolio.</p>
-                    <img src="images/github.png" alt="Logo de GitHub" title="Logo de GitHub">
                     <blockquote>
                         <p>"Esta es una frase."</p>
                         <p> <span>El autor.</span> </p>
@@ -75,18 +77,19 @@
                     <h3 id="html">¿Qué es HTML?</h3>
                     <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado y la estructura del contenido.</p>
                     <pre>
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html lang=&quot;en&quot;&gt;
-                        &lt;head&gt;
-                            &lt;meta charset=&quot;UTF-8&quot;&gt;
-                            &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-                            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-                            &lt;title&gt;Document&lt;/title&gt;
-                        &lt;/head&gt;
-                        &lt;body&gt;
+<!-- Para no tener una sangría adicional es importante que no este identado el código -->
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+&lt;body&gt;
                     
-                        &lt;/body&gt;
-                        &lt;/html&gt;
+&lt;/body&gt;
+&lt;/html&gt;
                     </pre>
                     <h3 id="tags">Etiquetas</h3>
                     <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene características y usos diferentes aunque visualmente den un resultado similar.</p>
@@ -127,6 +130,35 @@
                         <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
                     </ul>
                 </section>
+                <section class="section-content">
+                    <h2>Hola estos son algunos videos muy lindos</h2>
+                    <div class="slider">
+                        <scroll-container class="slider-content">
+                            <scroll-page class="slider-slide" id="slide-1">
+                                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/r8LTyI_w0a4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </scroll-page>
+                            <scroll-page class="slider-slide" id="slide-2">
+                                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/r8LTyI_w0a4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </scroll-page>
+                            <scroll-page class="slider-slide" id="slide-3">
+                                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/r8LTyI_w0a4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </scroll-page>
+                        </scroll-container>
+                        <div class="slider-bullet-list">
+                            <a href="#slide-1" class="slider-bullet">1</a>
+                            <a href="#slide-2" class="slider-bullet">2</a>
+                            <a href="#slide-3" class="slider-bullet">3</a>
+                        </div>
+                </div>
+                <div class="section-content">
+                    <h2>Suscríbete a nuestro newsletter</h2>
+                    <form class="form" action="">
+                        <input required type="text" placeholder="Nombre">
+                        <input required type="email" placeholder="Correo electrónico">
+                        <input type="submit" value="Suscribirme">
+                    </form>
+                </div>
+                </div>
                 <p>Si tienes alguna pregunta escríbeme a <a href="mailto:pontoni.emanuel@gmail.com">pontoni.emanuel@gmail.com</a> </p>
             </div>
         </div>
@@ -134,10 +166,13 @@
     <footer>
         <p>&copy; Emanuel Pontoni 2021</p>
         <div class="social">
-            <a href="https://www.instagram.com/emanuelpontoni" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
-            <a href="https://fb.me/emanuel.pontoni" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="https://twitter.com/emanuelpontoni" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/emanuelpontoni" target="_blank"><img src="images/instagram-black.png" alt="Instagram"></a>
+            <a href="https://fb.me/emanuel.pontoni" target="_blank"><img src="images/facebook-black.png" alt="Facebook"></a>
+            <a href="https://twitter.com/emanuelpontoni" target="_blank"><img src="images/twitter-black.png" alt="Twitter"></a>
         </div>
     </footer>
+
+    <button id="change-skin">Change Skin</button>
+    <script src="js/variant-skin.js"></script>
 </body>
 </html>
