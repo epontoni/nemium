@@ -44,21 +44,16 @@ a {
 
 
 .header-content {
-    position: relative;
+    /*position: relative;*/
+    padding: 20px;
 }
-.header {
+/* .header {
     position: sticky;
     top: -45px;
-}
+}*/
 header {
-    margin-top: 20px;
     font-size: 14px;
-    width: 188px;
     color: var(--gray10);
-    position: absolute;
-    top: 64px;
-    left: -188px;
-    z-index: 1;
 }
 
 header a {
@@ -94,8 +89,8 @@ nav .nav-title {
 }
 
 h1 {
-    font-size: 60px;
-    margin-top: 64px;
+    font-size: 40px;
+    margin-top: 20px;
     margin-bottom: 16px;
     font-weight: normal;
 }
@@ -106,12 +101,12 @@ h1 {
 }*/
 
 hr {
-    margin: 64px 0;
+    margin: 32px 0;
 }
 
 h2 {
     font-size: 2em;
-    margin: 64px 0 40px 0;
+    margin: 32px 0 20px 0;
     font-weight: normal;
 }
 
@@ -156,7 +151,7 @@ main {
 }
 
 .wrapper {
-    width: 902px;
+    max-width: 902px;
     margin: auto;
 }
 .main-content {
@@ -164,13 +159,13 @@ main {
 }
 
 .hero {
-    height: 250px;
+    height: 75px;
     background: linear-gradient(to top, rgba(126, 88, 88, 0.5), transparent), url('../images/pattern.png');
 }
 
 .section-content {
     counter-reset: titleList;
-    margin-top: 164px;
+    margin-top: 82px;
 }
 .section-content:first-child-of-type {
     margin-top: 0;
@@ -195,7 +190,7 @@ main {
 .section-content h3 {
     counter-increment: titleList;
     padding-bottom: 8px;
-    /*position: relative;*/
+    position: relative;
 }
 
 .section-content h3::before {
@@ -324,4 +319,47 @@ footer {
 
 .form input[type="submit"]:hover {
     cursor: pointer;
+}
+
+/* Cuando el ancho es mayor o igual a se activa */
+@media screen and (min-width: 1366px) {
+    .hero {
+        height: 250px;
+    }
+    header {        
+        font-size: 14px;
+        position: absolute;
+        top: 65px;
+        left: -208px;
+        width: 188px;
+        margin-top: 20px;
+        /*z-index: 1;*/
+    }
+
+    .header {
+        position: sticky;
+        top: -45px;
+    }
+
+    .header-content {
+        position: relative;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin-block-start: 64px;
+    }
+
+    hr {
+        margin: 64px 0;
+    }
+
+    h2 {
+        margin: 64px 0 40px 0;
+    }
+
+    .section-content {
+        margin-top: 164px;
+    }
 }

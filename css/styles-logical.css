@@ -40,23 +40,14 @@ a {
 }
 
 header {
+    margin-block-start: 20px;
     font-size: 14px;
     color: var(--white30);
-    position: absolute;
-    inset-block-start: 65px; /* top */
-    /*inset-block-end: ;  bottom */
-    inset-inline-start: -208px; /* left */
-    /*inset-block-end: ;  right */
-    inline-size: 188px;
-}
-
-.header {
-    position: sticky;
-    inset-block-start: -45px;
 }
 
 .header-content {
-    position: relative;
+    /*position: relative;*/
+    padding-inline: 20px;
 }
 
 header a {
@@ -89,8 +80,8 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 60px;
-    margin-block-start: 64px;
+    font-size: 40px;
+    margin-block-start: 20px;
     margin-block-end: 16px;
 }
 
@@ -120,7 +111,7 @@ pre {
 }
 
 .hero {
-    height: 250px;
+    block-size: 75px;
     background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
 }
 
@@ -291,3 +282,31 @@ footer .social {
     color: #251F24;
 }
 
+/* Cuando el ancho es mayor o igual a se activa */
+@media screen and (min-width: 1366px) {
+    .hero {
+        block-size: 250px;
+    }
+    header {
+        font-size: 14px;
+        position: absolute;
+        inset-block-start: 65px;
+        inset-inline-start: -208px;
+        inline-size: 188px;
+    }
+
+    .header {
+        position: sticky;
+        inset-block-start: -45px;
+    }
+
+    .header-content {
+        position: relative;
+        padding-inline: 0;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin-block-start: 64px;
+    }
+}
